@@ -2,7 +2,6 @@
 const HomeContent = () => {
 	return (
 		<div>
-			Home
 		</div>
 	);
 };
