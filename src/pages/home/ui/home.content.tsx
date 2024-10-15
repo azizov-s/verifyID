@@ -1,7 +1,8 @@
 
 const HomeContent = () => {
 	return (
-		<div>
+		<div className='border-[1px]'>
+			hello
 		</div>
 	);
 };
