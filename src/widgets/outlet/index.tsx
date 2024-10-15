@@ -2,7 +2,9 @@ import { Outlet } from 'react-router-dom'
 
 const ZOutlet = () => {
 	return (
-		<div style={{width: '100%', minHeight: '100vh', backgroundColor: 'grey'}}>
+		<div
+			className='w-full min-h-[100dvh] flex justify-center items-center' 
+		>
 			<Outlet/>
 		</div>
 	);
