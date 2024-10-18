@@ -1,0 +1,21 @@
+:root {
+  /* light */
+  /* colors */
+  --bg-base-default: var(--neutral-0);
+  --bg-base-emphasis: var(--neutral-900);
+  --bg-base-subtle: var(--neutral-100);
+  --bg-role-accent: var(--accent-400);
+  --bg-role-accent-hover: var(--accent-500);
+  --bg-role-subtle-hover: var(--neutral-200);
+  --border-default: var(--neutral-200);
+  --border-error: var(--red-500);
+  --border-success: var(--green-500);
+  --fg-base-default: var(--neutral-900);
+  --fg-base-disabled: var(--neutral-400);
+  --fg-base-on-emphasis: var(--neutral-0);
+  --fg-base-subtle: var(--neutral-500);
+  --fg-base-tertiary: var(--neutral-600);
+  --fg-role-action-ghost: var(--accent-400);
+  --fg-role-action-ghost-hover: var(--accent-700);
+  --fg-role-on-accent: var(--neutral-0);
+}

@@ -1,0 +1,92 @@
+@import '../../../tokens/color-tokens.css';
+@import '../../../tokens/spacing.css';
+
+@mixin chip_styles {
+  border: 0;
+  font-weight: 400;
+  font-style: normal;
+  transition-duration: 300ms;
+  outline: 2px solid transparent;
+  cursor: pointer;
+}
+@mixin default_styles {
+  @include chip_styles;
+  color: green;
+  background-color: var(--neutral-100);
+  &:focus {
+    transition-duration: 300ms;
+    outline-color: var(--accent-300);
+  }
+  &:hover {
+    transition-duration: 300ms;
+    background-color: var(--neutral-200);
+    outline-color: var(--accent-300);
+  }
+  &:disabled {
+    background-color: var(--neutral-100);
+
+    color: var(--neutral-400);
+    outline-color: transparent;
+    cursor: not-allowed;
+  }
+}
+@mixin active_styles {
+  @include chip_styles;
+  background-color: var(--neutral-900);
+  color: var(--neutral-0);
+  &:disabled {
+    background-color: var(--neutral-100);
+    color: var(--neutral-400);
+    outline-color: transparent;
+    cursor: not-allowed;
+  }
+  &:focus {
+    transition-duration: 300ms;
+    outline-color: var(--accent-300);
+  }
+}
+
+@mixin size_s_styles {
+  padding: var(--8) var(--20);
+  border-radius: var(--24);
+  line-height: var(--16);
+  font-size: var(--14);
+}
+@mixin size_m_styles {
+  padding: var(--12) var(--20);
+  border-radius: var(--24);
+  line-height: var(--16);
+  font-size: var(--14);
+}
+@mixin size_l_styles {
+  padding: var(--12) var(--20);
+  border-radius: var(--32);
+  line-height: var(--24);
+  font-size: var(--16);
+}
+
+.default_size_s {
+  @include default_styles;
+  @include size_s_styles;
+}
+.default_size_m {
+  @include default_styles;
+  @include size_m_styles;
+}
+.default_size_l {
+  @include default_styles;
+  @include size_l_styles;
+}
+
+.active_size_s {
+  @include active_styles;
+  @include size_s_styles;
+}
+.active_size_m {
+  @include active_styles;
+  @include size_m_styles;
+}
+.active_size_l {
+  @include active_styles;
+  @include size_l_styles;
+}

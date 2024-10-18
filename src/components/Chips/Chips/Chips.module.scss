@@ -1,0 +1,8 @@
+@import '../../../tokens//spacing.css';
+
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: var(--8);
+}
